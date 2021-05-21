@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <title>Read more or less more using javascript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="images/icon1.png" alt="webmobiledev">
+            </div>
+            <div class="content">
+                <h3>Web & Mobile Developemt</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quo dolore vitae velit similique, fugiat labore ut quia? Nisi deserunt hic quisquam ut, numquam ducimus, inventore fugit molestias veritatis sed animi aperiam ratione enim iure dolores doloremque voluptatum. At est, perspiciatis, inventore fuga esse similique quisquam nihil impedit sed, sapiente consequatur temporibus rerum cumque soluta veniam ducimus voluptate. Nostrum ab nemo laborum sequi cumque eaque, itaque aliquam quibusdam?</p>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="images/icon2.png" alt="customerservice">
+            </div>
+            <div class="content">
+                <h3>Customer Support</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quo dolore vitae velit similique, fugiat labore ut quia? Nisi deserunt hic quisquam ut, numquam ducimus, inventore fugit molestias veritatis sed animi aperiam ratione enim iure dolores doloremque voluptatum. At est, perspiciatis, inventore fuga esse similique quisquam nihil impedit sed, sapiente consequatur temporibus rerum cumque soluta veniam ducimus voluptate. Nostrum ab nemo laborum sequi cumque eaque, itaque aliquam quibusdam?</p>
+            </div>
+            <a class="more"></a>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="images/icon3.png" alt="marketing">
+            </div>
+            <div class="content">
+                <h3>Marketing & Communication</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quo dolore vitae velit similique, fugiat labore ut quia? Nisi deserunt hic quisquam ut, numquam ducimus, inventore fugit molestias veritatis sed animi aperiam ratione enim iure dolores doloremque voluptatum. At est, perspiciatis, inventore fuga esse similique quisquam nihil impedit sed, sapiente consequatur temporibus rerum cumque soluta veniam ducimus voluptate. Nostrum ab nemo laborum sequi cumque eaque, itaque aliquam quibusdam?</p>
+            </div>
+            <a class="more"></a>
+        </div>
+        <script>
+            let more = document.querySelectorAll('.more');
+            for (let i = 0; i < more.length; i++){
+                more[i].addEventListener('click', function(){
+                more[i].parentNode.classList.toggle('active')
+                })
+            }
+        </script>
+    </div>
+    
+</body>
+</html>
